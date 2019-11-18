@@ -113,9 +113,10 @@ public class TechJobs {
     private static void printJobs(ArrayList<HashMap<String, String>> someJobs) {
         String spacer = "***************************************";
 
-if (!JobData.findAll().contains(someJobs)){
+if (someJobs.isEmpty()){
     System.out.println(spacer);
     System.out.println("Search term not found. Try again.");
+    System.out.println(spacer);
 }
 
         for(HashMap<String, String> job : someJobs){
@@ -124,8 +125,9 @@ if (!JobData.findAll().contains(someJobs)){
             for(String dataPoint : job.keySet()){
                 System.out.println(dataPoint + ": " + job.get(dataPoint));
             }
+            System.out.println(spacer + "\n");
         }
-        System.out.println(spacer);
+
 
     }
 }
