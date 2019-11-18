@@ -127,7 +127,5 @@ if (someJobs.isEmpty()){
             }
             System.out.println(spacer + "\n");
         }
-
-
     }
 }

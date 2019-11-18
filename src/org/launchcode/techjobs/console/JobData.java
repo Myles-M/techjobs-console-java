@@ -42,7 +42,6 @@ public class JobData {
                 values.add(aValue);
             }
         }
-
         return values;
     }
 
